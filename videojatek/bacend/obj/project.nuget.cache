@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "JNUSb8uWBBE=",
+  "success": true,
+  "projectFilePath": "C:\\programozás\\c#\\videojatek_projekt\\videojatek\\bacend\\backend.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\toron\\.nuget\\packages\\microsoft.aspnetcore.openapi\\9.0.12\\microsoft.aspnetcore.openapi.9.0.12.nupkg.sha512",
+    "C:\\Users\\toron\\.nuget\\packages\\microsoft.openapi\\1.6.17\\microsoft.openapi.1.6.17.nupkg.sha512"
+  ],
+  "logs": []
+}
