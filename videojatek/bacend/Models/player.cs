@@ -1,10 +1,10 @@
 ﻿namespace backend.Models
 {
-    public class player
+    public class Player
     {
-        string username;
-        string email;   
-        string level;
-
+        public int Id { get; set; }
+        public string? Username { get; set; }
+        public string? Email { get; set; }
+        public int Level { get; set; }
     }
 }

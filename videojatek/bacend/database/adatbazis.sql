@@ -1,0 +1,36 @@
+
+CREATE DATABASE IF NOT EXISTS gamevault;
+
+USE gamevault;
+
+CREATE TABLE Games (
+    Id INT AUTO_INCREMENT PRIMARY KEY,
+    Name VARCHAR(150) NOT NULL,
+    Type VARCHAR(50),
+    Platform VARCHAR(50),
+    ReleaseDate VARCHAR(30)
+);
+
+CREATE TABLE Players (
+    Id INT AUTO_INCREMENT PRIMARY KEY,
+    Username VARCHAR(50) NOT NULL UNIQUE,
+    Email VARCHAR(100) NOT NULL UNIQUE,
+    Level INT NOT NULL DEFAULT 1
+);
+
+CREATE TABLE Reviews (
+    Id INT AUTO_INCREMENT PRIMARY KEY,
+    PlayerId INT NOT NULL,
+    GameId INT NOT NULL,
+    Points INT NOT NULL,
+    Comment VARCHAR(500),
+    ReviewReleaseDate DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP,
+
+    CONSTRAINT fk_reviews_players
+        FOREIGN KEY (PlayerId) REFERENCES Players(Id)
+        ON DELETE CASCADE,
+
+    CONSTRAINT fk_reviews_games
+        FOREIGN KEY (GameId) REFERENCES Games(Id)
+        ON DELETE CASCADE
+);

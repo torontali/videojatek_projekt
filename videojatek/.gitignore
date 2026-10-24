@@ -1,0 +1,17 @@
+# Visual Studio ideiglenes és generált mappák
+.vs/
+bin/
+obj/
+
+# Bővítmények és gyorsítótárak (ezek okozzák a sok felesleges fájlt nálad)
+*.db
+*.db-shm
+*.db-wal
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# Build kimenetek
+[Dd]ebug/
+[Rr]elease/

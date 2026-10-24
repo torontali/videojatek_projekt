@@ -2,10 +2,10 @@
 {
     public class Game
     {
-        string name;
-        string Type;
-        string platfrom;
-        string game_releaseDate;
+        public string? Name { get; set; }
+        public string? Type { get; set; }
+        public string? Platform { get; set; }
+        public string? ReleaseDate { get; set; }    
 
 
     }
