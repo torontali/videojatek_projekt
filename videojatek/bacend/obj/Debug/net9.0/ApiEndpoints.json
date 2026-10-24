@@ -1,0 +1,12 @@
+[
+  {
+    "ContainingType": "backend.Controllers.GamesController",
+    "Method": "TestConnection",
+    "RelativePath": "api/Games/test-connection",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  }
+]

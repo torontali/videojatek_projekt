@@ -1,5 +1,8 @@
 
-namespace bacend
+using Microsoft.EntityFrameworkCore;
+using backend.Models; 
+
+namespace backend
 {
     public class Program
     {
@@ -7,10 +10,13 @@ namespace bacend
         {
             var builder = WebApplication.CreateBuilder(args);
 
-            // Add services to the container.
+            // ITT KELL REGISZTRÁLNI AZ ADATBÁZISODAT!
+            var connectionString = builder.Configuration.GetConnectionString("DefaultConnection");
+            builder.Services.AddDbContext<Application>(options =>
+                options.UseMySql(connectionString, ServerVersion.AutoDetect(connectionString)));
 
+            // Add services to the container.
             builder.Services.AddControllers();
-            // Learn more about configuring OpenAPI at https://aka.ms/aspnet/openapi
             builder.Services.AddOpenApi();
 
             var app = builder.Build();
@@ -24,7 +30,6 @@ namespace bacend
             app.UseHttpsRedirection();
 
             app.UseAuthorization();
-
 
             app.MapControllers();
 
