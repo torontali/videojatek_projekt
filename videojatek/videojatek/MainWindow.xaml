@@ -5,121 +5,88 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:videojatek"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="Játékgyűjtemény Kezelő" Height="450" Width="800">
     <Grid>
-        <!-- A fő rács, ami 30-70 arányban osztja fel a képernyőt -->
-        <Grid>
-            <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="3*" />
-                <ColumnDefinition Width="7*" />
-            </Grid.ColumnDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="3*" />
+            <ColumnDefinition Width="7*" />
+        </Grid.ColumnDefinitions>
 
-            <!-- ===== BAL OLDALI GRID ===== -->
-            <Grid Grid.Column="0" Margin="10" Background="#f0f0f0">
-                <StackPanel Margin="10">
-                    <TextBlock Text="Menü" FontSize="14" FontWeight="Bold" Margin="0,0,0,10"/>
-                    <Button Content="Menü gomb 1" Margin="0,5"/>
-                    <Button Content="Menü gomb 2" Margin="0,5"/>
-                    <Button Content="Menü gomb 3" Margin="0,5"/>
-                </StackPanel>
-            </Grid>
-
-            <!-- ===== JOBB OLDALI GRID ===== -->
-            <Grid Grid.Column="1" Margin="10">
-                <Grid.RowDefinitions>
-                    <RowDefinition Height="Auto" />
-                    <!-- 0. Sor: Toolbar (kereső + szűrők) -->
-                    <RowDefinition Height="*"    />
-                    <!-- 1. Sor: Görgethető kártyák -->
-                </Grid.RowDefinitions>
-
-                <!-- ================= TOOLBAR (KERESŐ ÉS SZŰRŐK) ================= -->
-                <StackPanel Grid.Row="0" Orientation="Horizontal" Margin="0,0,0,15" VerticalAlignment="Center">
-
-                    <!-- Keresőmező -->
-                    <TextBox x:Name="txtSearch" Width="240" Height="30" VerticalContentAlignment="Center" Margin="0,0,10,0" Padding="5,0"/>
-
-                    <!-- Platform választó (All Platforms) -->
-                    <ComboBox x:Name="cbPlatform" Width="140" Height="30" Margin="0,0,10,0" VerticalContentAlignment="Center" SelectedIndex="0">
-                        <ComboBoxItem Content="Minden platform" />
-                        <ComboBoxItem Content="PC" />
-                        <ComboBoxItem Content="PlayStation" />
-                        <ComboBoxItem Content="Xbox" />
-                        <ComboBoxItem Content="Nintendo Switch" />
-                    </ComboBox>
-
-                    <!-- Műfaj választó (All Genre) -->
-                    <ComboBox x:Name="cbGenre" Width="140" Height="30" VerticalContentAlignment="Center" SelectedIndex="0">
-                        <ComboBoxItem Content="Minden műfaj" />
-                        <ComboBoxItem Content="Akció" />
-                        <ComboBoxItem Content="RPG" />
-                        <ComboBoxItem Content="Stratégia" />
-                        <ComboBoxItem Content="Shooter" />
-                    </ComboBox>
-
-                </StackPanel>
-
-
-                <!-- ================= KÁRTYÁK LISTÁJA (Görgethető terület) ================= -->
-                <ScrollViewer Grid.Row="1" VerticalScrollBarVisibility="Auto">
-
-                    <WrapPanel ItemWidth="340" ItemHeight="150">
-
-                        <!-- 1. KÁRTYA -->
-                        <Border Background="White" BorderBrush="#D0D0D0" BorderThickness="1" CornerRadius="6" Margin="6">
-                            <Grid>
-                                <Grid.ColumnDefinitions>
-                                    <ColumnDefinition Width="3*" />
-                                    <ColumnDefinition Width="7*" />
-                                </Grid.ColumnDefinitions>
-
-                                <Image Grid.Column="0" Source="https://via.placeholder.com/150" Stretch="UniformToFill" Margin="8" />
-
-                                <StackPanel Grid.Column="1" Margin="8,8,12,8" VerticalAlignment="Center">
-                                    <TextBlock Text="Cyberpunk 2077" FontWeight="Bold" FontSize="14" Foreground="#222" />
-                                    <TextBlock Text="CD Projekt Red" FontSize="11" Foreground="#666" Margin="0,2,0,0" />
-                                    <TextBlock Text="Kiadva: 2020. 12. 10." FontSize="10" Foreground="#888" Margin="0,1,0,0" />
-                                    <FrameworkElement Height="10" />
-                                    <StackPanel Orientation="Horizontal" VerticalAlignment="Bottom">
-                                        <Button Content="▲" Width="26" Height="22" FontSize="10" Margin="0,0,4,0"/>
-                                        <Button Content="▼" Width="26" Height="22" FontSize="10" Margin="0,0,8,0"/>
-                                        <TextBlock Text="142 szavazat" VerticalAlignment="Center" FontSize="11" Foreground="#444" FontWeight="SemiBold" />
-                                    </StackPanel>
-                                </StackPanel>
-                            </Grid>
-                        </Border>
-
-                        <!-- 2. KÁRTYA -->
-                        <Border Background="White" BorderBrush="#D0D0D0" BorderThickness="1" CornerRadius="6" Margin="6">
-                            <Grid>
-                                <Grid.ColumnDefinitions>
-                                    <ColumnDefinition Width="3*" />
-                                    <ColumnDefinition Width="7*" />
-                                </Grid.ColumnDefinitions>
-
-                                <Image Grid.Column="0" Source="https://via.placeholder.com/150" Stretch="UniformToFill" Margin="8" />
-
-                                <StackPanel Grid.Column="1" Margin="8,8,12,8" VerticalAlignment="Center">
-                                    <TextBlock Text="The Witcher 3" FontWeight="Bold" FontSize="14" Foreground="#222" />
-                                    <TextBlock Text="CD Projekt Red" FontSize="11" Foreground="#666" Margin="0,2,0,0" />
-                                    <TextBlock Text="Kiadva: 2015. 05. 19." FontSize="10" Foreground="#888" Margin="0,1,0,0" />
-                                    <FrameworkElement Height="10" />
-                                    <StackPanel Orientation="Horizontal" VerticalAlignment="Bottom">
-                                        <Button Content="▲" Width="26" Height="22" FontSize="10" Margin="0,0,4,0"/>
-                                        <Button Content="▼" Width="26" Height="22" FontSize="10" Margin="0,0,8,0"/>
-                                        <TextBlock Text="389 szavazat" VerticalAlignment="Center" FontSize="11" Foreground="#444" FontWeight="SemiBold" />
-                                    </StackPanel>
-                                </StackPanel>
-                            </Grid>
-                        </Border>
-
-                    </WrapPanel>
-
-                </ScrollViewer>
-            </Grid>
-
+        <!-- ===== BAL OLDALI GRID (MENÜ) ===== -->
+        <Grid Grid.Column="0" Margin="10" Background="#f0f0f0">
+            <StackPanel Margin="10">
+                <TextBlock Text="Menü" FontSize="14" FontWeight="Bold" Margin="0,0,0,10"/>
+                <Button Content="Játék hozzáadása" Margin="0,5"/>
+                <Button Content="Adatok frissítése" Margin="0,5"/>
+                <Button Content="Kilépés" Margin="0,5"/>
+            </StackPanel>
         </Grid>
 
+        <!-- ===== JOBB OLDALI GRID (TARTALOM) ===== -->
+        <Grid Grid.Column="1" Margin="10">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="*" />
+            </Grid.RowDefinitions>
 
+            <!-- TOOLBAR -->
+            <StackPanel Grid.Row="0" Orientation="Horizontal" Margin="0,0,0,15" VerticalAlignment="Center">
+                <TextBox x:Name="txtSearch" Width="240" Height="30" VerticalContentAlignment="Center" Margin="0,0,10,0" Padding="5,0"/>
+
+                <ComboBox x:Name="cbPlatform" Width="140" Height="30" Margin="0,0,10,0" VerticalContentAlignment="Center" SelectedIndex="0">
+                    <ComboBoxItem Content="Minden platform" />
+                    <ComboBoxItem Content="PC" />
+                    <ComboBoxItem Content="PlayStation" />
+                    <ComboBoxItem Content="Xbox" />
+                </ComboBox>
+
+                <ComboBox x:Name="cbGenre" Width="140" Height="30" VerticalContentAlignment="Center" SelectedIndex="0">
+                    <ComboBoxItem Content="Minden műfaj" />
+                    <ComboBoxItem Content="Akció" />
+                    <ComboBoxItem Content="RPG" />
+                    <ComboBoxItem Content="Stratégia" />
+                </ComboBox>
+            </StackPanel>
+
+            <!-- DINAMIKUS KÁRTYÁK LISTÁJA (BINDOLVA A BACKENDHEZ) -->
+            <ScrollViewer Grid.Row="1" VerticalScrollBarVisibility="Auto">
+                <ItemsControl ItemsSource="{Binding Games}">
+                    <ItemsControl.ItemsPanel>
+                        <ItemsPanelTemplate>
+                            <WrapPanel ItemWidth="340" ItemHeight="150" />
+                        </ItemsPanelTemplate>
+                    </ItemsControl.ItemsPanel>
+
+                    <ItemsControl.ItemTemplate>
+                        <DataTemplate>
+                            <Border Background="White" BorderBrush="#D0D0D0" BorderThickness="1" CornerRadius="6" Margin="6">
+                                <Grid>
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="3*" />
+                                        <ColumnDefinition Width="7*" />
+                                    </Grid.ColumnDefinitions>
+
+                                    <!-- Kép kötése -->
+                                    <Image Grid.Column="0" Source="{Binding CoverImage}" Stretch="UniformToFill" Margin="8" />
+
+                                    <!-- Szövegek és adatok kötése -->
+                                    <StackPanel Grid.Column="1" Margin="8,8,12,8" VerticalAlignment="Center">
+                                        <TextBlock Text="{Binding Title}" FontWeight="Bold" FontSize="14" Foreground="#222" />
+                                        <TextBlock Text="{Binding Company}" FontSize="11" Foreground="#666" Margin="0,2,0,0" />
+                                        <TextBlock Text="{Binding ReleaseDate}" FontSize="10" Foreground="#888" Margin="0,1,0,0" />
+                                        <FrameworkElement Height="10" />
+                                        <StackPanel Orientation="Horizontal" VerticalAlignment="Bottom">
+                                            <Button Content="▲" Width="26" Height="22" FontSize="10" Margin="0,0,4,0"/>
+                                            <Button Content="▼" Width="26" Height="22" FontSize="10" Margin="0,0,8,0"/>
+                                            <TextBlock Text="{Binding VotesText}" VerticalAlignment="Center" FontSize="11" Foreground="#444" FontWeight="SemiBold" />
+                                        </StackPanel>
+                                    </StackPanel>
+                                </Grid>
+                            </Border>
+                        </DataTemplate>
+                    </ItemsControl.ItemTemplate>
+                </ItemsControl>
+            </ScrollViewer>
+        </Grid>
     </Grid>
 </Window>
