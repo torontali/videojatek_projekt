@@ -1,6 +1,11 @@
-﻿namespace backend.Controllers
+﻿using Microsoft.AspNetCore.Mvc;
+
+namespace backend.Controllers
 {
-    public class GameControler
+    [Route("api/[controller]")]
+    [ApiController]
+    public class GameControler : ControllerBase
     {
+        
     }
 }

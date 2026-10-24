@@ -3,6 +3,30 @@
   "WorkspaceRootPath": "C:\\programoz\u00E1s\\c#\\videojatek_projekt\\videojatek\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{936878E3-CA96-4A87-AED3-23D0AF043B62}|bacend\\backend.csproj|c:\\programoz\u00E1s\\c#\\videojatek_projekt\\videojatek\\bacend\\controllers\\gamecontroler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{936878E3-CA96-4A87-AED3-23D0AF043B62}|bacend\\backend.csproj|solutionrelative:bacend\\controllers\\gamecontroler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{936878E3-CA96-4A87-AED3-23D0AF043B62}|bacend\\backend.csproj|c:\\programoz\u00E1s\\c#\\videojatek_projekt\\videojatek\\bacend\\models\\game.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{936878E3-CA96-4A87-AED3-23D0AF043B62}|bacend\\backend.csproj|solutionrelative:bacend\\models\\game.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{936878E3-CA96-4A87-AED3-23D0AF043B62}|bacend\\backend.csproj|c:\\programoz\u00E1s\\c#\\videojatek_projekt\\videojatek\\bacend\\models\\player.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{936878E3-CA96-4A87-AED3-23D0AF043B62}|bacend\\backend.csproj|solutionrelative:bacend\\models\\player.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{936878E3-CA96-4A87-AED3-23D0AF043B62}|bacend\\backend.csproj|c:\\programoz\u00E1s\\c#\\videojatek_projekt\\videojatek\\bacend\\models\\rewiev.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{936878E3-CA96-4A87-AED3-23D0AF043B62}|bacend\\backend.csproj|solutionrelative:bacend\\models\\rewiev.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{936878E3-CA96-4A87-AED3-23D0AF043B62}|bacend\\backend.csproj|c:\\programoz\u00E1s\\c#\\videojatek_projekt\\videojatek\\bacend\\backend.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{936878E3-CA96-4A87-AED3-23D0AF043B62}|bacend\\backend.csproj|solutionrelative:bacend\\backend.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{965D20EA-AB50-496A-96F8-B453E75F7FFE}|videojatek\\videojatek.csproj|c:\\programoz\u00E1s\\c#\\videojatek_projekt\\videojatek\\videojatek\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{965D20EA-AB50-496A-96F8-B453E75F7FFE}|videojatek\\videojatek.csproj|solutionrelative:videojatek\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{965D20EA-AB50-496A-96F8-B453E75F7FFE}|videojatek\\videojatek.csproj|c:\\programoz\u00E1s\\c#\\videojatek_projekt\\videojatek\\videojatek\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{965D20EA-AB50-496A-96F8-B453E75F7FFE}|videojatek\\videojatek.csproj|solutionrelative:videojatek\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
@@ -19,6 +43,83 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "GameControler.cs",
+              "DocumentMoniker": "C:\\programoz\u00E1s\\c#\\videojatek_projekt\\videojatek\\bacend\\Controllers\\GameControler.cs",
+              "RelativeDocumentMoniker": "bacend\\Controllers\\GameControler.cs",
+              "ToolTip": "C:\\programoz\u00E1s\\c#\\videojatek_projekt\\videojatek\\bacend\\Controllers\\GameControler.cs",
+              "RelativeToolTip": "bacend\\Controllers\\GameControler.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-24T09:07:15.032Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Rewiev.cs",
+              "DocumentMoniker": "C:\\programoz\u00E1s\\c#\\videojatek_projekt\\videojatek\\bacend\\Models\\Rewiev.cs",
+              "RelativeDocumentMoniker": "bacend\\Models\\Rewiev.cs",
+              "ToolTip": "C:\\programoz\u00E1s\\c#\\videojatek_projekt\\videojatek\\bacend\\Models\\Rewiev.cs",
+              "RelativeToolTip": "bacend\\Models\\Rewiev.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-24T09:02:30.594Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Game.cs",
+              "DocumentMoniker": "C:\\programoz\u00E1s\\c#\\videojatek_projekt\\videojatek\\bacend\\Models\\Game.cs",
+              "RelativeDocumentMoniker": "bacend\\Models\\Game.cs",
+              "ToolTip": "C:\\programoz\u00E1s\\c#\\videojatek_projekt\\videojatek\\bacend\\Models\\Game.cs",
+              "RelativeToolTip": "bacend\\Models\\Game.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-24T09:02:16.324Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "player.cs",
+              "DocumentMoniker": "C:\\programoz\u00E1s\\c#\\videojatek_projekt\\videojatek\\bacend\\Models\\player.cs",
+              "RelativeDocumentMoniker": "bacend\\Models\\player.cs",
+              "ToolTip": "C:\\programoz\u00E1s\\c#\\videojatek_projekt\\videojatek\\bacend\\Models\\player.cs",
+              "RelativeToolTip": "bacend\\Models\\player.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-24T09:01:59.141Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "backend",
+              "DocumentMoniker": "C:\\programoz\u00E1s\\c#\\videojatek_projekt\\videojatek\\bacend\\backend.csproj",
+              "RelativeDocumentMoniker": "bacend\\backend.csproj",
+              "ToolTip": "C:\\programoz\u00E1s\\c#\\videojatek_projekt\\videojatek\\bacend\\backend.csproj",
+              "RelativeToolTip": "bacend\\backend.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2026-10-24T09:01:23.619Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "MainWindow.xaml",
+              "DocumentMoniker": "C:\\programoz\u00E1s\\c#\\videojatek_projekt\\videojatek\\videojatek\\MainWindow.xaml",
+              "RelativeDocumentMoniker": "videojatek\\MainWindow.xaml",
+              "ToolTip": "C:\\programoz\u00E1s\\c#\\videojatek_projekt\\videojatek\\videojatek\\MainWindow.xaml",
+              "RelativeToolTip": "videojatek\\MainWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-10-24T08:39:10.96Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
               "Title": "MainWindow.xaml.cs",
               "DocumentMoniker": "C:\\programoz\u00E1s\\c#\\videojatek_projekt\\videojatek\\videojatek\\MainWindow.xaml.cs",
               "RelativeDocumentMoniker": "videojatek\\MainWindow.xaml.cs",
