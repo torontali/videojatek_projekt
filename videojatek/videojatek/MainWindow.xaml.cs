@@ -20,5 +20,9 @@ namespace videojatek
         {
             InitializeComponent();
         }
+        private void Jatekoskezelo_Click(object sender, RoutedEventArgs e)
+        {
+            MainFrame.Navigate(new Uri("Jatekoskezelo.xaml", UriKind.Relative));
+        }
     }
 }

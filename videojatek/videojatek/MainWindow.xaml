@@ -6,7 +6,17 @@
         xmlns:local="clr-namespace:videojatek"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
-    <Grid>
-
+    <Grid Background="Black">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="200"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <StackPanel Grid.Column="0">
+            <Button Content="Játékos kezelő" Click="Jatekoskezelo_Click" Margin="10" Height="40"/>
+            <Button Content="Játék kezelő" Margin="10" Height="40"/>
+            <Button Content="Statisztika" Margin="10" Height="40"/>
+        </StackPanel>
+        <Frame x:Name="MainFrame" NavigationUIVisibility="Hidden" Grid.Column="1"/>
+        
     </Grid>
 </Window>

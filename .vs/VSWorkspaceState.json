@@ -1,6 +1,13 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\videojatek",
+    "\\videojatek\\bacend",
+    "\\videojatek\\bacend\\Controllers",
+    "\\videojatek\\bacend\\database",
+    "\\videojatek\\bacend\\Models",
+    "\\videojatek\\videojatek"
   ],
+  "SelectedNode": "\\videojatek\\bacend\\Models",
   "PreviewInSolutionExplorer": false
 }
