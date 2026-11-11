@@ -1,0 +1,62 @@
+﻿<Page x:Class="videojatek.Jatekkezelo"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      Title="Játékkezelő">
+    <Page.Resources>
+        <Style x:Key="MenuButtonStyle" TargetType="Button">
+            <Setter Property="Background" Value="Black"/>
+            <Setter Property="Foreground" Value="#D5A7F4"/>
+            <Setter Property="BorderThickness" Value="0"/>
+            <Setter Property="Height" Value="40"/>
+            <Setter Property="Padding" Value="12,6"/>
+            <Setter Property="Margin" Value="0,3"/>
+            <Setter Property="HorizontalContentAlignment" Value="Left"/>
+            <Setter Property="Cursor" Value="Hand"/>
+            <Setter Property="FontSize" Value="13"/>
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="Button">
+                        <Border x:Name="GombHatter" Background="{TemplateBinding Background}" CornerRadius="10" Padding="{TemplateBinding Padding}">
+                            <ContentPresenter VerticalAlignment="Center"/>
+                        </Border>
+                        <ControlTemplate.Triggers>
+                            <Trigger Property="IsMouseOver" Value="True">
+                                <Setter TargetName="GombHatter" Property="Background" Value="#302344"/>
+                            </Trigger>
+                        </ControlTemplate.Triggers>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+        <Style TargetType="TextBox">
+            <Setter Property="Background" Value="#1D1B27"/>
+            <Setter Property="Foreground" Value="#D5A7F4"/>
+            <Setter Property="BorderBrush" Value="#40364F"/>
+            <Setter Property="BorderThickness" Value="1"/>
+            <Setter Property="Padding" Value="9,5"/>
+        </Style>
+    </Page.Resources>
+    <Grid Margin="24">
+        <StackPanel VerticalAlignment="Top" MaxWidth="900" HorizontalAlignment="Left">
+            <TextBlock Text="Játék hozzáadása" FontSize="25" FontWeight="SemiBold" Foreground="#D5A7F4" Margin="0,0,0,6"/>
+            
+            <Border Background="#191722" BorderBrush="#302A3B" BorderThickness="1" CornerRadius="10" Padding="18">
+                <StackPanel>
+                    <TextBlock Text="Játék neve" Foreground="#D5A7F4" Margin="0,0,0,6"/>
+                    <TextBox x:Name="Jatek_neve" Height="34" Margin="0,0,0,14"/>
+                    <TextBlock Text="Fejlesztő / kiadó" Foreground="#D5A7F4" Margin="0,0,0,6"/>
+                    <TextBox x:Name="Ceg_neve" Height="34" Margin="0,0,0,14"/>
+                    <TextBlock Text="Megjelenés éve" Foreground="#D5A7F4" Margin="0,0,0,6"/>
+                    <TextBox x:Name="Megjelenes_eve" Height="34" Margin="0,0,0,14"/>
+                    <TextBlock Text="Platform" Foreground="#D5A7F4" Margin="0,0,0,6"/>
+                    <TextBox x:Name="Platform" Height="34" Margin="0,0,0,14"/>
+                    <TextBlock Text="Műfaj" Foreground="#D5A7F4" Margin="0,0,0,6"/>
+                    <TextBox x:Name="Mufaj" Height="34" Margin="0,0,0,14"/>
+                    <TextBlock Text="Borítókép URL (nem kötelező)" Foreground="#D5A7F4" Margin="0,0,0,6"/>
+                    <TextBox x:Name="Borito_url" Height="34" Margin="0,0,0,18"/>
+                    <Button x:Name="Hozzaadas_gomb" Style="{StaticResource MenuButtonStyle}" Content="Hozzáadás" HorizontalAlignment="Left" Click="Hozzaadas_Click" IsEnabled="True"/>
+                </StackPanel>
+            </Border>
+        </StackPanel>
+    </Grid>
+</Page>

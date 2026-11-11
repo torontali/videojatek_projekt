@@ -1,9 +1,12 @@
-﻿namespace backend.Models
+namespace backend.Models
 {
     public class Rewiev
     {
-        string points;
-        string comment;
-        string review_releaseDate;
+        public int Id { get; set; }
+        public int PlayerId { get; set; }
+        public int GameId { get; set; }
+        public int Points { get; set; }
+        public string? Comment { get; set; }
+        public DateTime ReviewReleaseDate { get; set; }
     }
 }

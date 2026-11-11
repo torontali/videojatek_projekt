@@ -1,6 +1,5 @@
-
+using backend.Models;
 using Microsoft.EntityFrameworkCore;
-using backend.Models; 
 
 namespace backend
 {
@@ -10,29 +9,27 @@ namespace backend
         {
             var builder = WebApplication.CreateBuilder(args);
 
-            // ITT KELL REGISZTRÁLNI AZ ADATBÁZISODAT!
             var connectionString = builder.Configuration.GetConnectionString("DefaultConnection");
-            builder.Services.AddDbContext<Application>(options =>
-                options.UseMySql(connectionString, ServerVersion.AutoDetect(connectionString)));
+                
 
-            // Add services to the container.
+            builder.Services.AddDbContext<Application>(options =>
+                options.UseMySql(connectionString, new MySqlServerVersion(new Version(8, 0, 0))));
+
             builder.Services.AddControllers();
-            builder.Services.AddOpenApi();
+            builder.Services.AddEndpointsApiExplorer();
+            builder.Services.AddSwaggerGen();
 
             var app = builder.Build();
 
-            // Configure the HTTP request pipeline.
             if (app.Environment.IsDevelopment())
             {
-                app.MapOpenApi();
+                app.UseSwagger();
+                app.UseSwaggerUI();
             }
 
             app.UseHttpsRedirection();
-
             app.UseAuthorization();
-
             app.MapControllers();
-
             app.Run();
         }
     }

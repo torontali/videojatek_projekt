@@ -1,10 +1,10 @@
-﻿namespace backend.Models
+namespace backend.Models
 {
     public class player
     {
-        string username;
-        string email;   
-        string level;
-
+        public int Id { get; set; }
+        public string Username { get; set; } = string.Empty;
+        public string Email { get; set; } = string.Empty;
+        public int Level { get; set; } = 1;
     }
 }
